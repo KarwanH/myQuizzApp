@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="faveIicon/icons8-quiz-32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
     <script src="script.js"></script>
 
     <!-- Bootstrap files -->
@@ -59,8 +60,8 @@
                 <b id="all-questions"></b>
               </p>
 
-              <button class="pb-3 btn btn-primary">Share</button>
-              <button class="pb-3 btn btn-light text-primary" onclick="reply()">Reply</button>
+              <button class="btn btn-primary">Share</button>
+              <button class="btn btn-light text-primary" onclick="reply()">Reply</button>
             </div>
 
             <b class="text-center" id="end-comment">Du hast es bestanden!</b>
@@ -77,7 +78,7 @@
 
 
             <div class="card quiz-answer-card mb-2" onclick="answer('answer_1')">
-                <div class="card-body" id="answer_1">
+                <div class="card-body" id="answer_1" >
                   Antwort
                 </div>
               </div>
@@ -114,7 +115,7 @@
                     Questions
                 </div>
 
-                <button class="btn btn-primary p-0 " id="my-btn" disabled onclick="nextQuestion()">Next Question</button>
+                <button class="btn btn-primary p-2 " id="my-btn" disabled onclick="nextQuestion()">Next Question</button>
 
               </div>
 
